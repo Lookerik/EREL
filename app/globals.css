@@ -1,0 +1,17 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; background: #000; }
+body { background: #000; color: #fff; font-size: 13px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+::selection { background: #fff; color: #000; }
+.display { font-weight: 700; letter-spacing: -0.045em; line-height: .9; }
+.btn { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 600; padding: 16px 28px; background: #fff; color: #000; transition: opacity .5s; }
+.btn:hover { opacity: .75; }
+.link { text-transform: uppercase; letter-spacing: .16em; font-size: 11px; font-weight: 500; position: relative; }
+.link::after { content: ""; position: absolute; left: 0; bottom: -4px; height: 1px; width: 100%; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .6s cubic-bezier(.22,.61,.36,1); }
+.link:hover::after { transform: scaleX(1); }
+.logo-mask { background: currentColor; -webkit-mask: url(/brand/logo.png) center/contain no-repeat; mask: url(/brand/logo.png) center/contain no-repeat; aspect-ratio: 743/1084; }
+@keyframes pagein { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.page-in { animation: pagein .9s cubic-bezier(.22,.61,.36,1) both; }
+@keyframes spin3d { to { transform: rotateY(360deg); } }
+.spin-slow { animation: spin3d 40s linear infinite; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+:focus-visible { outline: 1px solid #fff; outline-offset: 4px; }
