@@ -12,7 +12,7 @@ export default function Hero() {
   }, []);
   return (<section className="relative flex h-[100svh] flex-col items-center justify-end px-5 pb-12 pt-28 text-center">
     <div ref={logo} className="flex min-h-0 flex-1 items-center opacity-0"><Logo className="h-full max-h-[62vh]" /></div>
-    <div ref={copy} className="mt-8"><h1 className="display text-4xl md:text-6xl">WEAR YOUR SYMBOL</h1>
+    <div ref={copy} className="mt-8"><h1 className="display text-4xl md:text-6xl">WELCOME TO EREL</h1>
       <p className="mt-4 text-ash">Objects created for those who refuse the ordinary.</p>
       <Link href="/collection" className="btn mt-8 inline-block">Shop collection</Link></div></section>);
 }
