@@ -2,7 +2,7 @@ import { placeholder } from "@/lib/placeholder";
 export type Product = { id: string; slug: string; name: string; price: number; category: string; description: string; materials: string; sizes: string[]; images: string[]; model3d?: string /* optional GLB path: /models/obsidian.glb */ };
 const d = "Hand-finished in small batches. Engraved with the symbol on the inner side.";
 const photos: Record<string, string[]> = {
-  obsidian: ["/obsidian.jpg"],
+  obsidian: ["/brand/obsidian.jpg"],
 };
 export const products: Product[] = [
   ["OBSIDIAN", 85, "Ring", "Black-oxidised sterling silver", ["50","52","54","56","58","60"]],
