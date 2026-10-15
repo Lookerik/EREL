@@ -1,2 +1,2 @@
-import Hero from "@/components/Hero"; import ProductGrid from "@/components/ProductGrid"; import AboutSection from "@/components/AboutSection";
-export default function Home() { return (<><Hero /><ProductGrid /><AboutSection /></>); }
+import Hero from "@/components/Hero"; import CategoryTiles from "@/components/CategoryTiles"; import ProductGrid from "@/components/ProductGrid"; import AboutSection from "@/components/AboutSection"; import { products } from "@/data/products";
+export default function Home() { return (<><Hero /><CategoryTiles /><ProductGrid items={products.slice(0, 4)} title="THE COLLECTION" more /><AboutSection /></>); }
